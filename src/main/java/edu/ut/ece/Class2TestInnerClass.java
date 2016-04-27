@@ -8,7 +8,9 @@ public class Class2TestInnerClass extends A implements I {
 	{
 		staticField = 42;
 	}
-
+	
+	private static int staticFieldDouble = 2*staticField;
+	
 	public int instanceMethod(String arg1, int arg2, Dog d) {
 		int a = 0 + arg2 - this.instanceField;
 		String b = a + "" + arg1;
