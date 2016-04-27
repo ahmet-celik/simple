@@ -35,11 +35,11 @@ public class Class2TestInnerClass extends A implements I {
 		return s;
 	}
 	
-//	static class X {
-//		public static void voidMethod(int a) {
-//			Class2TestInnerClass.voidMethod(a,0);
-//		}
-//	}
+	static class X {
+		public static void voidMethod(int a) {
+			Class2TestInnerClass.voidMethod(a,staticField);
+		}
+	}
 	
 	public static void voidMethod(int a) {
 		Class2TestInnerClass.voidMethod(a,0);
@@ -49,11 +49,11 @@ public class Class2TestInnerClass extends A implements I {
 		System.out.println(a + b);
 	}
 	
-//	class Y {
-//		public void voidMethod2(int a) {
-//			Class2TestInnerClass.this.voidMethod2(a,0);
-//		}
-//	}
+	class Y {
+		public void voidMethod2(int a) {
+			Class2TestInnerClass.this.voidMethod2(a,staticField);
+		}
+	}
 	
 	public void voidMethod2(int a) {
 		Class2TestInnerClass.this.voidMethod2(a,0);
