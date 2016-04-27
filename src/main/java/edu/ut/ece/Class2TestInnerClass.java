@@ -4,6 +4,10 @@ public class Class2TestInnerClass extends A implements I {
 	
 	private int instanceField = 1;
 	private static int staticField;
+	
+	{
+		staticField = 42;
+	}
 
 	public int instanceMethod(String arg1, int arg2, Dog d) {
 		int a = 0 + arg2 - this.instanceField;
